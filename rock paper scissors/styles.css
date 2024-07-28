@@ -1,0 +1,66 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  /* color: #dad7cd; */
+}
+
+body{
+  background-color: #EFF7CF;
+
+}
+h1{
+  text-align: center;
+  margin: 150px 40px 40px;
+  font-size: 40px;
+  color:#732C2C
+}
+
+.container_game_ele{
+  margin: 40px auto;
+  display: flex;
+  width: 25%;
+  height: 70px;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.box{
+background-color: #732C2C;
+width: 25%;
+border-radius: 15px;
+color: #EFF7CF;
+font-size: 20px;
+}
+.result_reset{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+}
+.result{
+  font-size: 40px;
+  font-weight: 500;
+  color:#732C2C;
+}
+
+.cnt_win{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#732C2C;
+}
+
+.restart{
+  background-color: #BAD9B5;
+  height: 50px;
+  position: static;;
+  width: 100px;
+  border-radius:10px ;
+  font-size: 25px;
+  color:#732C2C ;
+}

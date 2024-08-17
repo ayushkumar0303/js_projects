@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Assistant, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial,
+ sans-serif;
+}
+body{
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  color: antiquewhite;
+  
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-evenly;
+  width: 350px;
+  height: 450px;
+  background: linear-gradient(45deg, blue, red);
+  padding: 20px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.input_data{
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.input_box{
+  flex: 1;
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.search_btn{
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.input_box:focus{
+  outline: none;
+  border: none;
+}
+
+.weather_icon{
+  height: 30%;
+}
+
+.temp{
+font-size: 3rem;
+}
+
+.city{
+  font-size: 2rem;
+}
+.weather_details{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+}
+.icon{
+  height: 40%;
+}
+
+.details span{
+  font-size: 1.8em;
+  font-weight: 600;
+}
+

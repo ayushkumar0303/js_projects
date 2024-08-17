@@ -1,0 +1,41 @@
+
+body{
+  margin: 0;
+  background-color: black;
+  height: 100vh;
+  overflow: hidden; /* remove the scroll bar */
+
+}
+
+span{
+  background-image: url(images/heart.webp);
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  pointer-events: none;
+  background-size: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  animation: animate 6s linear;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+p{
+  font-size: 25px;
+  color: rgb(234, 231, 231);
+}
+
+@keyframes animate {
+  0%{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    filter: hue-rotate(0);
+  }
+  100%{
+    transform: translate(-50%,-5000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}

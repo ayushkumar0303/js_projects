@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  background-color: coral;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn{
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0 ,0.3);
+  cursor: pointer;
+  font-size: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn span{
+  position: relative;
+  z-index: 1;
+}
+
+.btn::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: rgb(210, 57, 57);
+  border-radius: 50%;
+  top: var(--yPos);
+  left: var(--xPos);/* we can't access the psedo element from js. but we can access variable*/
+  transform: translate(-50%,-50%);
+  transition: width 0.5s,height 0.5s;
+}
+
+.btn:hover::before{
+  width: 300px;
+  height: 300px;
+}

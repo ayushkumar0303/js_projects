@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: rgb(16, 7, 48);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.random-password-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 100px;
+  width: 25%;
+}
+
+.heading{
+  color: white;
+}
+
+.heading div{
+color: green;
+border-bottom: 2px solid green;
+width: 77%;
+padding: 10px 0;
+}
+
+.inputArea{
+display: flex;
+}
+
+#inputArea{
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  outline: none;
+  flex: 1;
+  pointer-events: none;
+}
+
+
+.inputArea span{
+  color: black;
+  background-color: white;
+  margin: 10px 0;
+  padding: 15px 10px;
+  color: green;
+  border: none;
+  cursor: pointer;
+}
+
+button{
+  background-color:green ;
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  cursor: pointer;
+}
